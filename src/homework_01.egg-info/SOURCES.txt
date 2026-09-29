@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/homework/__init__.py
+src/homework/main.py
+src/homework_01.egg-info/PKG-INFO
+src/homework_01.egg-info/SOURCES.txt
+src/homework_01.egg-info/dependency_links.txt
+src/homework_01.egg-info/top_level.txt
