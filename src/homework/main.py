@@ -1,5 +1,11 @@
 import hashlib
 
+def calculate_hashes(text: str) -> tuple[str, str]: 
+	text_bytes = text.encode("utf-8") 
+	md5_hash = hashlib.md5(text_bytes).hexdigest() 
+	sha256_hash = hashlib.sha256(text_bytes).hexdigest() 
+	return md5_hash, sha256_hash
+
 x = 1
 y = 3.14
 z = True
@@ -22,9 +28,7 @@ report = (
 )
 
 
-report_bytes = report.encode("utf-8")
-md5_hash = hashlib.md5(report_bytes).hexdigest() 
-sha256_hash = hashlib.sha256(report_bytes).hexdigest()
+md5_hash, sha256_hash = calculate_hashes(report)
 
 print(report)
 print()

@@ -1,0 +1,7 @@
+# Editable Git install with no remote (homework-01==0.1.0)
+-e /home/user/homework-01
+iniconfig==2.3.0
+packaging==26.3
+pluggy==1.6.0
+Pygments==2.21.0
+pytest==9.1.1
