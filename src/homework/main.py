@@ -1,3 +1,5 @@
+import hashlib
+
 x = 1
 y = 3.14
 z = True
@@ -19,5 +21,12 @@ report = (
     f"ФИО: Щербинин Антон Владимирович"
 )
 
-print(report)
 
+report_bytes = report.encode("utf-8")
+md5_hash = hashlib.md5(report_bytes).hexdigest() 
+sha256_hash = hashlib.sha256(report_bytes).hexdigest()
+
+print(report)
+print()
+print("MD5:", md5_hash)
+print("SHA-256:", sha256_hash)
